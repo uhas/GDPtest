@@ -43,10 +43,10 @@ app.get('/flightDetails', function (req, res) {
                 } else {
                     console.log("printing results....");
                     console.log(result);
-                    res.send("contact name:"+result.firstname + " " + result.lastname + "<br>Phone number: " + result.phone + "<br>"+result.email+"<br>birthdate: " + result.date + " <br> is Saved ");
+                    res.send("contact name:"+result.firstname + " " + result.lastname + "<br>Phone number: " + result.phone + "<br>mail: "+result.email+"<br>birthdate: " + result.date + " <br> is Saved ");
                 }
             });
-        }
+        } 
     });
 });
 //for inserting the data into mongoDB
